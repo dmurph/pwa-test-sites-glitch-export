@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Integration Test Refactor Helper</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <h1 class="title">Integration test refactor helper</h1>
+        <div class="instructions">
+          <h2>Input</h2>
+          <div class="rendered-form">
+            <div class="formbuilder-text form-group field-old-id-and-args">
+              <label for="old-id-and-args" class="formbuilder-text-label"
+                >Old Id and args<span class="formbuilder-required"
+                  >*</span
+                ></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="old-id-and-args"
+                access="false"
+                id="oldIdAndArgs"
+                required="required"
+                aria-required="true"
+              />
+            </div>
+            <div class="formbuilder-text form-group field-new-id-and-args">
+              <label for="new-id-and-args" class="formbuilder-text-label"
+                >New ID and args<span class="formbuilder-required"
+                  >*</span
+                ></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="new-id-and-args"
+                access="false"
+                id="newIdAndArgs"
+                required="required"
+                aria-required="true"
+              />
+            </div>
+            <div class="formbuilder-text form-group field-old-regex">
+              <label for="old-regex" class="formbuilder-text-label"
+                >old regex<span class="formbuilder-required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="old-regex"
+                access="false"
+                id="oldRegex"
+                required="required"
+                aria-required="true"
+              />
+            </div>
+            <div class="formbuilder-text form-group field-replace-str">
+              <label for="replace-str" class="formbuilder-text-label"
+                >replace str<span class="formbuilder-required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="replace-str"
+                access="false"
+                id="replaceStr"
+                required="required"
+                aria-required="true"
+              />
+            </div>
+          </div>
+          <h2>Output</h2>
+          <div>
+            <h3>
+              id
+            </h3>
+            <div id="idRegexOutput">
+              
+            </div>
+            <div id="idReplaceOutput">
+              
+            </div>
+            <h3>
+              Call
+            </h3>
+            <div id="callRegexOutput">
+              
+            </div>
+            <div id="callReplaceOutput">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The footer holds our remix button — you can use it for structure or cut it out ✂ -->
+    <footer class="footer">
+      <div class="links"></div>
+      <a
+        class="btn--remix"
+        target="_top"
+        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
+      >
+        <img
+          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
+          alt=""
+        />
+        Remix on Glitch
+      </a>
+    </footer>
+  </body>
+</html>

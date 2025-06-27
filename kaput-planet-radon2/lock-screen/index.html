@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alternative Lock Screen App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <script src="/script.js" defer></script>
+    <style>
+      body {
+        background-color: #f86;
+        font-family: monospace;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Alternative Lock Screen App</h1>
+    <h2>
+      This is the /lock-screen page. Hopefully you are on the lock screen now?
+    </h2>
+
+    <img
+      width="250"
+      height="250"
+      src="https://cdn.glitch.global/bd470b3d-df9f-4c30-bdcd-ba036bcf7847/aeolian-grandiose-cayenne.png?v=1641788692651"
+    />
+    <p>
+      The glitch button in the top right will try to navigate you to glitch.com
+      (shouldn't work, it's outside the origin)
+    </p>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div
+      class="glitchButton"
+      style="position: fixed; top: 20px; right: 20px"
+    ></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>

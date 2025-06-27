@@ -1,0 +1,14 @@
+{
+  "name": "Moma Fixed",
+  "start_url": "/moma-fixed/",
+  "display": "standalone",
+  "theme_color": "#a0532e",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/bd8c6e3c-1e99-4ed2-a03b-2fac787c7fef%2Fmin_icon_fixed.svg?v=1625203378657",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

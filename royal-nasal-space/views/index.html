@@ -1,0 +1,78 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <script>
+      const request = indexedDB.open("library");
+      let db;
+      request.onupgradeneeded = function() {
+        console.log("In onupgradeneeded block");
+        // The database did not previously exist, so create object stores and indexes.
+        const db = request.result;
+        //  const store = db.createObjectStore("books", {keyPath: "isbn"});
+        const store = db.createObjectStore("books", { keyPath: "isbn" });
+        // const store = db.createObjectStore("books");
+        const titleIndex = store.createIndex("by_title", "title", {
+          unique: true
+        });
+        const authorIndex = store.createIndex("by_author", "author");
+        // Populate with initial data.
+       let put_req1 =  store.put({ title: "harry", isbn: 1 });
+        put_req1.onerror = () => { console.log("Error 1", put_req1) };
+         put_req1.onsuccess = () => { console.log("Success 1") };
+        let put_req2 = store.put({ title: "harry", isbn: 2 });
+        put_req2.onerror = () => { 
+          console.log("Error 2", put_req2);
+          console.log("Name", put_req2.error.name);
+        };
+         put_req2.onsuccess = () => { console.log("Success 2") };
+
+        // store.put({title: "Water Buffaloes", author: "Fred", isbn: 234567});
+        // store.put({title: "Bedrock Nights", author: "Barney", isbn: 345678});
+        //  let values = [];
+        //  values.push({title: "Quarry Memories", author: "Fred", isbn: 123456});
+        //  values.push({title: "Water Buffaloes", author: "Fred", isbn: 234567});
+        // values.push({title: "Bedrock Nights", author: "Barney", isbn: 345678});
+        //  console.log("Calling PutAll");
+        //  let put_all_request = store.putAllValues(values);
+        // let put_all_request = store.putAllValues([{},{},{}]);
+        //  put_all_request.onerror = () => { console.log("Error") };
+        //  put_all_request.onsuccess = () => { console.log("Success") };
+
+        //  console.log("Seeing if records were inserted");
+        //  let get_request1 = store.get(123456);
+        //  get_request1.onsuccess = () => { console.log("Succesfully retreived 123456") };
+        //  get_request1.onerror = () => { console.log("Failed to retreived 123456") };
+        //  let get_request2 = store.get(234567);
+        //  get_request2.onsuccess = () => { console.log("Succesfully retreived 234567") };
+        //  get_request2.onerror = () => { console.log("Failed to retreived 234567") };
+      };
+      // request.onsuccess = function() {
+      //   console.log("In onsuccess block");
+      //  db = request.result;
+      //  var tx = db.transaction("books", "readwrite");
+      //  var store = tx.objectStore("books");
+      //  var rq = store.get(123456);
+      //  db = request.result;
+      // var tx = db.transaction("books", "readonly");
+      //  const st = tx.objectStore("books");
+      // let put_all_request = st.putAllValues([{},{},{}]);
+
+      //  rq.onsuccess = function() {
+      //    const record = rq.result;
+      //    if (record !== undefined) {
+      //      // A match was found.
+      //      console.log("Got record", record);
+      //      // console.log("Got record with title", record.title, "author", record.author,
+      //      // "isbn", record.isbn);
+      //    } else {
+      //      // No match was found.
+      //      console.log("Record was not found");
+      //    }
+      //  };
+      // };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "name": "App With URL containing large characters",
+  "start_url": "/abcdefghij/klmnopqrst/uvwxyzabcd/efghijklmn/opqrstuvwxyz/abcdefghij/klmnopqrst/",
+  "display": "standalone",
+  "theme_color": "#a0532e",
+  "description": "Tree clothes",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.global/7edaca4d-5889-4a4a-b9b2-0279b528b67e/untitled.png?v=1675463030373",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }],
+  "screenshots": [
+    {
+      "src": "https://cdn.glitch.global/ad30abe7-9c35-4938-9706-eb0577b023f9/random.jpeg?v=1705708655763",
+      "sizes": "1912x1336",
+      "type": "image/jpg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "https://cdn.glitch.global/ad30abe7-9c35-4938-9706-eb0577b023f9/random_narrow.jpeg?v=1705708677843",
+      "sizes": "956x668",
+      "type": "image/jpg",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://cdn.glitch.global/ad30abe7-9c35-4938-9706-eb0577b023f9/random2.jpeg?v=1705708656297",
+      "sizes": "1912x1336",
+      "type": "image/jpg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "https://cdn.glitch.global/ad30abe7-9c35-4938-9706-eb0577b023f9/random2_narrow.jpeg?v=1705708679074",
+      "sizes": "956x668",
+      "type": "image/jpg",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://cdn.glitch.global/ad30abe7-9c35-4938-9706-eb0577b023f9/random3.jpeg?v=1705708656712",
+      "sizes": "1912x1336",
+      "type": "image/jpg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "https://cdn.glitch.global/ad30abe7-9c35-4938-9706-eb0577b023f9/random3_narrow.jpeg?v=1705708679646",
+      "sizes": "956x668",
+      "type": "image/jpg",
+      "form_factor": "narrow"
+    }]
+}

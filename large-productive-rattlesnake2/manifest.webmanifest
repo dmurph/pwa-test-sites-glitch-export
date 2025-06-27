@@ -1,0 +1,14 @@
+{
+  "name": "Large Productive Rattlesnake",
+  "description": "Server-side icon changes",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/65beeb00-1bb5-4d35-be0b-c152b00e49cc%2Flarge-productive-rattlesnake.png?v=1614308567274",
+    "purpose": "any maskable",
+    "sizes": "871x871",
+    "type": "image/png"
+  }]
+}

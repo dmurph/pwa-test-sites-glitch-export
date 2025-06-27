@@ -1,0 +1,13 @@
+{
+  "name": "Quilled & Wednesday",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#df5411",
+  "description": "Wednesday quilling class",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/7aa3eeed-a732-439e-b7b1-3be80b33220f%2Fquilled-and-wednesday.svg?v=1595320931074",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }]
+}

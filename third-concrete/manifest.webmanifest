@@ -1,0 +1,12 @@
+{
+  "name": "Third Concrete",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#7c7c7c",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/591e8713-bc8f-4fee-b9f6-68a426c97474%2Fthird-concrete.png?v=1563431801919",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

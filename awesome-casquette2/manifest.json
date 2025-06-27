@@ -1,0 +1,22 @@
+{
+  "name": "awesome-casquette",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/9bdcb1a9-d93f-4d1a-9d46-be446fbc251f%2Fblue-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+
+"shortcuts":[
+  {"name":"Fast","url":"http://awesome-casquette.glitch.me/fast.html",
+"icons":[{"src":"https://cdn.glitch.com/9bdcb1a9-d93f-4d1a-9d46-be446fbc251f%2Fs1.png?v=1611282260738","type":"image/png","sizes":"192x192"}]},
+  {"name":"Medium","url":"http://awesome-casquette.glitch.me/medium.html",
+"icons":[{"src":"https://cdn.glitch.com/9bdcb1a9-d93f-4d1a-9d46-be446fbc251f%2Fs3.png?v=1611282304765","type":"image/png","sizes":"192x192"}]},
+  {"name":"Slow","url":"http://awesome-casquette.glitch.me/slow.html",
+"icons":[{"src":"https://cdn.glitch.com/9bdcb1a9-d93f-4d1a-9d46-be446fbc251f%2Fs5.png?v=1611282338971","type":"image/png","sizes":"192x192"}]}
+],
+
+  "start_url": "index.html",
+  "display": "browser"
+}

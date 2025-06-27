@@ -1,0 +1,93 @@
+{
+  "name": "Level Sedate Baboon",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.global/1f391e10-8270-4685-8bd0-e4aa59283879/b-16.png?v=1670985545261",
+      "sizes": "16x16",
+      "purpose": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/1f391e10-8270-4685-8bd0-e4aa59283879/b-24.png?v=1670985537392",
+      "sizes": "24x24",
+      "purpose": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/1f391e10-8270-4685-8bd0-e4aa59283879/b-32.png?v=1670985530532",
+      "sizes": "32x32",
+      "purpose": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/1f391e10-8270-4685-8bd0-e4aa59283879/b-48.png?v=1670985525206",
+      "sizes": "48x48",
+      "purpose": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/1f391e10-8270-4685-8bd0-e4aa59283879/b-64.png?v=1670985515882",
+      "sizes": "64x64",
+      "purpose": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/1f391e10-8270-4685-8bd0-e4aa59283879/b-128.png?v=1670985505100",
+      "sizes": "128x128",
+      "purpose": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/1f391e10-8270-4685-8bd0-e4aa59283879/b-256.png?v=1670985495101",
+      "sizes": "256x256",
+      "purpose": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/1f391e10-8270-4685-8bd0-e4aa59283879/g-16.png?v=1670985540771",
+      "sizes": "16x16",
+      "purpose": "maskable",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/1f391e10-8270-4685-8bd0-e4aa59283879/g-24.png?v=1670985534833",
+      "sizes": "24x24",
+      "purpose": "maskable",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/1f391e10-8270-4685-8bd0-e4aa59283879/g-32.png?v=1670985528073",
+      "sizes": "32x32",
+      "purpose": "maskable",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/1f391e10-8270-4685-8bd0-e4aa59283879/g-48.png?v=1670985522922",
+      "sizes": "48x48",
+      "purpose": "maskable",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/1f391e10-8270-4685-8bd0-e4aa59283879/g-64.png?v=1670985513020",
+      "sizes": "64x64",
+      "purpose": "maskable",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/1f391e10-8270-4685-8bd0-e4aa59283879/g-128.png?v=1670985502541",
+      "sizes": "128x128",
+      "purpose": "maskable",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/1f391e10-8270-4685-8bd0-e4aa59283879/g-256.png?v=1670985498341",
+      "sizes": "256x256",
+      "purpose": "maskable",
+      "type": "image/png"
+    }
+  ]
+}

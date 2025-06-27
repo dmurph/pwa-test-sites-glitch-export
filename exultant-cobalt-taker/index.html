@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<script>
+// HTTPS Redirect.
+if (window.location.protocol != 'https:') {
+  window.location.protocol = 'https:';
+}
+</script>
+
+<head>
+  <title>Exultant Cobalt Taker</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" type="image/png" href="https://cdn.glitch.global/54eac718-f40f-4e1c-aabc-6b564627bfb7/test.png?v=1698681024522">
+</head>
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
+<img src="https://cdn.glitch.global/54eac718-f40f-4e1c-aabc-6b564627bfb7/large.jpg?v=1698681025697" width="500" height="500">
+<pre>Exultant Cobalt Taker</pre>
+<script>
+navigator.serviceWorker.register('serviceworker.js');
+</script>

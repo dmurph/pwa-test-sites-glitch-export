@@ -1,0 +1,10 @@
+{
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "icons": [{
+    "src": "https://cdn.glitch.global/dced62b6-6139-40c6-b9d5-21fa81e5c610/halved-cubic-postage.svg?v=1666655307120",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }]
+}

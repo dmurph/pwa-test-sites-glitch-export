@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<script>
+// HTTPS Redirect.
+if (window.location.protocol != 'https:') {
+  window.location.protocol = 'https:';
+}
+</script>
+
+<head>
+  <title>Thundering Frigate</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="https://cdn.glitch.com/f6a65c43-d03f-488c-b07d-787f6bb4a7db%2Fthunderingfrigate.png?v=1552881082871">
+  <meta id="themeColor" name="theme-color" content="#c8e1ff" />
+</head>
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
+<img src="https://cdn.glitch.com/f6a65c43-d03f-488c-b07d-787f6bb4a7db%2Fthunderingfrigate.png?1552881082871">
+<button id="button">Day mode</button>
+<script src="main.js"></script>

@@ -1,0 +1,13 @@
+{
+  "name": "Fire Star Agate",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#d03700",
+  "description": "Fire star agate",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/64050732-3bf6-47d2-a518-fafcb45d5142%2Fstar-fire-agate.svg?v=1602200907010",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }]
+}

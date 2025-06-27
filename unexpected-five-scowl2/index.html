@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<script>
+// HTTPS Redirect.
+if (window.location.protocol != 'https:') {
+  window.location.protocol = 'https:';
+}
+</script>
+
+<head>
+  <title>Unexpected Five Scowl</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" type="image/png" href="https://cdn.glitch.global/efed2cb6-5660-485d-b36e-d73adae50882/unexpected-five-scowl3.jpg?v=1713932036656">
+</head>
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
+<img src="https://cdn.glitch.global/efed2cb6-5660-485d-b36e-d73adae50882/unexpected-five-scowl3.jpg?v=1713932036656">
+<pre>Unexpected Five Scowl</pre>
+<p>
+  Testing page for unusual web app manifest ID.
+</p>
+<script>
+navigator.serviceWorker.register('serviceworker.js');
+</script>

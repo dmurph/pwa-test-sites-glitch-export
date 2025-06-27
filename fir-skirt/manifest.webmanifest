@@ -1,0 +1,13 @@
+{
+  "name": "Fir Skirt",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#a0532e",
+  "description": "Tree clothes",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/ef02f65b-f854-42dc-999e-fa54b2657feb%2Ffir-skirt.svg?v=1574118592082",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }]
+}

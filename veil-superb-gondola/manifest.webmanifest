@@ -1,0 +1,13 @@
+{
+  "name": "Veil Superb Gondola",
+  "description": "Veil Superb Gondola",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/eda447c1-d5ad-4a33-8139-3ab7b2014773%2Fveil-superb-gondola.svg?v=1594351022965",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }]
+}

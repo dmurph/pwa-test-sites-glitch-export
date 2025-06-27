@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<script>
+  // HTTPS Redirect.
+  if (window.location.protocol != "https:") {
+    window.location.protocol = "https:";
+  }
+</script>
+<head></head>
+<div>
+  <h1>Manifest Unique ID Tester - FOO PAGE</h1>
+</div>
+<div>
+  This page is foo/index.html
+</div>
+<ul>
+  <li><a href="/index.html">/index.html</a></li>
+  <li><a href="/foo/index.html">/foo/index.html</a></li>
+  <li>
+    <a href="/bar/index.html">/bar/index.html</a>
+  </li>
+</ul>

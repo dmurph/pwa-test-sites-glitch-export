@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="manifest.json" />
+    <title>PWA resize background bug</title>
+    <style>
+      body {
+        background: red;
+      }
+
+      @media (max-width: 959px) {
+        body {
+          background: blue;
+        }
+      }
+
+      #message {
+        background: white;
+        font-size: 40px;
+      }
+    </style>
+    <script>
+      navigator.serviceWorker.register("sw.js");
+    </script>
+  </head>
+  <body>
+    <div id="message">
+      <h1>
+        Webapp turning blank repro
+      </h1>
+      <h2>
+        Reproduce option 1:
+      </h2>
+      <ol>
+        <li>Ensure the background is red (width &gt; 959px)</li>
+        <li>Install this page as a PWA</li>
+        <li>Resize the window to have a width &lt; 959px</li>
+        <li>Expected behavior: HTML body still visible (this text still shows)</li>
+        <li>Actual behavior: Background is the only thing showing</li>
+      </ol>
+      <h2>
+        Reproduce option 2:
+      </h2>
+      <ol>
+        <li>Ensure the background is blue (width &lt; 959px</li>
+        <li>Install this page as a PWA</li>
+        <li>Expected behavior: Web app is launched & HTML body still visible (this text still shows)</li>
+        <li>Actual behavior: Background is the only thing showing</li>
+      </ol>
+    </div>
+  </body>
+</html>

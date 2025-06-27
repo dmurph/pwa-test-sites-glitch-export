@@ -1,0 +1,12 @@
+{
+  "name": "Daisy Summer Mahogany",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#a13100",
+  "icons": [{
+    "src": "https://cdn.glitch.com/4c8c3973-8125-46ef-a476-b9facdf09914%2Fdaisy-summer-mahogany.png?v=1583367240347",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

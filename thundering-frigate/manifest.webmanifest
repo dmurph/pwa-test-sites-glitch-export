@@ -1,0 +1,12 @@
+{
+  "name": "Thundering Frigate",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#c8e1ff",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/f6a65c43-d03f-488c-b07d-787f6bb4a7db%2Fthunderingfrigate.png?1552881082871",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

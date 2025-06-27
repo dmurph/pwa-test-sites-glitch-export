@@ -1,0 +1,15 @@
+{
+  "name": "Luck Proud Nautilus",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/039a7dbf-c042-47e6-9d11-857318aa4b62%2Fproud%20nautilus.png?v=1610067911249",
+      "type": "image/png",
+      "sizes": "425x425",
+      "purpose": "maskable"
+    }
+  ],
+  "background_color": "#3367D6",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#3367D6"
+}

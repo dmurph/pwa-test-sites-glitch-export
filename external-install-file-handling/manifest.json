@@ -1,0 +1,10 @@
+{
+  "name": "External Install File Handling Tester",
+  "display": "standalone",
+  "start_url": "/index.html",
+  "icons": [{
+    "src": "https://cdn.glitch.global/cd750581-1811-4b20-add6-1fb0cc5b406b/ai-icon.png?v=1663962546607",
+    "type": "image/png",
+    "sizes": "512x512"
+  }]
+}

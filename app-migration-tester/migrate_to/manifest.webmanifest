@@ -1,0 +1,13 @@
+{
+  "name": "App Migration Tester",
+  "description": "This is the migration goal!",
+  "start_url": "/migrate_to/index.html",
+  "display": "standalone",
+  "theme_color": "#b2ec40",
+  "scope": "/migrate_to/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/d80a84de-1565-4730-9b15-17d17c7cd9e8%2F123f3355-7b68-4d57-839b-9171ebd9f877_spicon.png?v=1608145092860",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

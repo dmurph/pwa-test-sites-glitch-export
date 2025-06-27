@@ -1,0 +1,47 @@
+{
+  "name": "Aluminium Cooked Kidney",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.global/fe3a4678-ef21-4815-8bf5-51cb192a0b30/canvas.png?v=1672356919136",
+      "sizes": "793x793",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#bad4f5",
+  "background_color": "pink",
+  "display": "standalone",
+  "display_override": ["tabbed"],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "One",
+      "url": "one.html"
+    },
+    {
+      "name": "Two",
+      "url": "two.html"
+    }
+  ],
+  "tab_strip": {
+    "home_tab": {
+      "url": "/",
+      "icons": [
+        {
+          "src": "https://cdn.glitch.global/fe3a4678-ef21-4815-8bf5-51cb192a0b30/image.png?v=1674799706548",
+          "sizes": "16x16",
+          "type": "image/png"
+        }
+      ],
+      "scope_patterns": [
+        {"pathname": "/[^/]*/.*"}
+      ]
+    },
+    "new_tab_button": {
+      "url": "one.html"
+    }
+  }
+}

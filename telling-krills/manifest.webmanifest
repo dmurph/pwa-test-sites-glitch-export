@@ -1,0 +1,13 @@
+{
+  "name": "Telling Krills",
+  "description": "Talk to the krills.",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#f20",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/c605c71d-22d0-48c7-b85a-7611786324cb%2Ftelling-krills-logo.png?v=1582171165304",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

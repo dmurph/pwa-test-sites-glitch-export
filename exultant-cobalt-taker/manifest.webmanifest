@@ -1,0 +1,13 @@
+{
+  "name": "Incandescent Ginger Voyage",
+  "start_url": "index.html?launch",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "id": "app-id",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.global/54eac718-f40f-4e1c-aabc-6b564627bfb7/test.png?v=1698681024522",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

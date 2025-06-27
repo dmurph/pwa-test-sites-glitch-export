@@ -1,0 +1,14 @@
+{
+  "name": "Moma Broken",
+  "start_url": "/moma-broken/",
+  "display": "standalone",
+  "theme_color": "#a0532e",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/bd8c6e3c-1e99-4ed2-a03b-2fac787c7fef%2Fmin_icon_broken.svg?v=1625203372423",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

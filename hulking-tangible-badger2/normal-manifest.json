@@ -1,0 +1,12 @@
+{
+  "name": "Tangible Badger",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#333",
+  "icons": [{
+    "src": "https://cdn.glitch.global/57363112-deba-49da-86b4-233bfd5688ed/normal-tangible-badger.svg?v=1673235214098",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }]
+}

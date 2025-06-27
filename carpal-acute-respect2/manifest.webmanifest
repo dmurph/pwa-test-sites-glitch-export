@@ -1,0 +1,15 @@
+{
+  "name": "Icon Jail any-size",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#a0532e",
+  "description": "Jail for bad icons",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/bd8c6e3c-1e99-4ed2-a03b-2fac787c7fef%2Fblackwhitebars-min.svg?v=1624500206977",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

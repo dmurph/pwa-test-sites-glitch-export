@@ -1,0 +1,10 @@
+{
+  "name": "Classic Spoof Individual",
+  "display": "standalone",
+  "start_url": "/start.html",
+  "icons": [{
+    "src": "https://cdn.glitch.global/e0d011f6-b713-4ae2-ac3b-6a93174ddf1d/classic-tall-individual-spoof.svg?v=1653978150284",
+    "type": "image/svg+xml",
+    "sizes": "256x256"
+  }]
+}

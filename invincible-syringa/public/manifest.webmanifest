@@ -1,0 +1,13 @@
+{
+  "name": "Invincible Syringa",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "theme_color": "#c735d8",
+  "description": "Always Syringa",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/f7944bde-6d7e-4259-bf6e-187d84e4b866%2Finvincible-syringa.png?v=1571373352617",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

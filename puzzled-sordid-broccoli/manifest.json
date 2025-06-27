@@ -1,0 +1,27 @@
+{
+  "background_color": "purple",
+  "description": "scope_extensions + permissions",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/47e82a3e-e99d-4a0a-86f9-4f8bea8ede1e%2Fastronaut-icon.png?v=1587002651149",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "name": "scope_extensions + permissions",
+  "short_name": "scope_extensions + permissions",
+  "scope_": "/",
+  "start_url": "/index.html",
+  "scope_extensions": [
+    {
+      "origin": "https://luhuangmsft.github.io"
+    },
+    {
+      "origin": "https://luhuangmsft.github.io/permission1.site/"
+    },
+    {
+      "origin": "https://xn--kxae4bafwg.xn--pxaix.gr/"
+    }
+  ]
+}

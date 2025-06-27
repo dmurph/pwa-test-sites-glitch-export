@@ -1,0 +1,12 @@
+{
+  "name": "Outer Tabby",
+  "start_url": "/index.html",
+  "display": "minimal-ui",
+  "theme_color": "#2FF924",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.global/03b5c04b-20e3-45e8-8a9b-8cbda7ec9cda/thumbnails%2FTabbySkywalker.jpg?1697034478604",
+    "sizes": "155x155",
+    "type": "image/png"
+  }]
+}

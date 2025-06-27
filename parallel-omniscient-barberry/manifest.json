@@ -1,0 +1,43 @@
+{
+  "short_name": "PRY FH Demo with Foo and Bar",
+  "name": "PRY FH Demo with Foo and Bar",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/c7a93bed-1cdd-44bb-af17-bfcf7b4deebe%2Ffavicon-144x144.png?v=1565659787255",
+      "sizes": "144x144"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#88FFFF",
+  "display": "standalone",
+  "scope": "/",
+  "file_handlers": [
+    {
+      "action": "/index.html?plaintext&first_launch",
+      "name": "Plain Text",
+      "accept": {
+        "text/plain": [".txt", ".md", ".csv", ".text", ".foo", ".bar", ".foobar"]
+      },
+      "icons": [
+        {
+          "src": "https://cdn.glitch.com/5cabc795-c88e-4910-9dac-4dee744d2456%2Fplain_text_icon.png?v=1626727838642",
+          "sizes": "144x144"
+        }
+      ]
+    },
+    {
+      "action": "/index.html?image&first_launch",
+      "accept": {
+        "image/jpeg": [".jpeg", ".jpg"]
+      },
+      "launch_type": "multiple-clients",
+      "icons": [
+        {
+          "src": "https://cdn.glitch.global/8806b70c-153c-40ea-9d00-40c02871fcab/jpg-flat.png?v=1658422423088",
+          "sizes": "144x144"
+        }
+      ]
+    }
+  ],
+  "theme_color": "#9aca42"
+}

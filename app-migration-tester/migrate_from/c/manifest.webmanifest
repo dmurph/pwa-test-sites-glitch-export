@@ -1,0 +1,13 @@
+{
+  "name": "App Migration Tester C",
+  "description": "This is the migration source! C",
+  "start_url": "/migrate_from/c/index.html",
+  "display": "standalone",
+  "theme_color": "#99ff99",
+  "scope": "/migrate_from/c/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/d80a84de-1565-4730-9b15-17d17c7cd9e8%2F123f3355-7b68-4d57-839b-9171ebd9f877_spup.png?v=1611348083145",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

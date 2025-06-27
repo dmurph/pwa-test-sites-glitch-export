@@ -1,0 +1,12 @@
+{
+  "name": "Cheerful Plausible Bite",
+  "start_url": ".",
+  "display": "browser",
+  "theme_color": "#ffffff",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/adccf4a1-a2b7-43c3-ab7a-146f3bd7b92f%2Fcheerful-plausible-bite.svg?v=1623039856926",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }]
+}

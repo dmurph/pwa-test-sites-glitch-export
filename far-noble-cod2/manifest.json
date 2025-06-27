@@ -1,0 +1,14 @@
+{
+  "name": "Far Noble Cod",
+  "scope": "/",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#d45500",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.global/ca07b0a7-c680-4652-ae58-5caf9daaf85a/far-noble-cod.png?v=1674846626428",
+      "sizes": "144x144",
+      "type": "image/svg+xml"
+    }
+  ]
+}

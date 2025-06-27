@@ -1,0 +1,13 @@
+{
+  "name": "Relieved Tide Geese",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#a0532e",
+  "description": "Site that lets you demo the beforeinstallprompt functionality.",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.global/647e5a36-6f9e-44d8-b0be-9e08ec493ed9/icon144.png?v=1660841461674",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

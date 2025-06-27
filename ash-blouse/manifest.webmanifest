@@ -1,0 +1,12 @@
+{
+  "name": "Ash Blouse",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1abf98",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/project-avatar/4d069489-6409-4b7d-812f-8eeb95900d3f.png?1549413852459",
+    "sizes": "200x200",
+    "type": "image/png"
+  }]
+}

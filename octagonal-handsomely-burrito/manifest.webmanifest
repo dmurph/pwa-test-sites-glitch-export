@@ -1,0 +1,12 @@
+{
+  "name": "Octagonal Handsomely Burrito",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#552200",
+  "icons": [{
+    "src": "https://cdn.glitch.global/6ec617cb-3da5-4c67-8597-f67f9cd615d8/SmallBurrito.jpeg?v=1707154765524",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }],
+  "capture_links": "new-client"
+}

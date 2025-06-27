@@ -1,0 +1,28 @@
+{
+  "name": "xd-unarch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": { "node": "12.x" },
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "gcp-build": "NODE_ENV=production next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "jszip": "3.2.2",
+    "next": "^9.5.1",
+    "next-offline": "^5.0.2",
+    "pretty-ms": "^7.0.0",
+    "rc-progress": "^3.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-dropzone": "^11.0.2",
+    "tar-stream": "^2.1.3"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Soft Puppy",
+  "description": "Puppies are soft.",
+  "start_url": "https://soft-puppy.glitch.me",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "scope": "https://soft-puppy.glitch.me",
+  "icons": [{
+    "src": "https://cdn.glitch.com/123f3355-7b68-4d57-839b-9171ebd9f877%2Fspicon.png?v=1533701023210",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

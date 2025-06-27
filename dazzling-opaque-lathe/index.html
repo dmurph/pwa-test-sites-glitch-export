@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<script>
+// HTTPS Redirect.
+if (window.location.protocol != 'https:') {
+  window.location.protocol = 'https:';
+}
+</script>
+
+<head>
+  <title>Dazzling Opaque Lathe</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" type="image/png" href="https://cdn.glitch.com/adccf4a1-a2b7-43c3-ab7a-146f3bd7b92f%2Fcheerful-plausible-bite.svg?v=1623039856926">
+</head>
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
+<img src="https://cdn.glitch.com/adccf4a1-a2b7-43c3-ab7a-146f3bd7b92f%2Fcheerful-plausible-bite.svg?v=1623039856926">
+<pre>Dazzling Opaque Lathe</pre>
+<pre>This app has a manifest with a start_url but display: browser.</pre>
+<script>
+navigator.serviceWorker.register('serviceworker.js');
+</script>

@@ -1,0 +1,10 @@
+{
+  "name": "Fearless Canary Echium",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/3e030dbe-e5bb-4e50-a4a3-920d4d9842ec%2Ffearless-canary-echium.svg?v=1595933993054",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }]
+}

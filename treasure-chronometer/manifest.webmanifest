@@ -1,0 +1,12 @@
+{
+  "name": "Treasure Chronometer",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#d8cb0a",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/06ae17de-8616-4db7-90e7-0f523f5b8be6%2Ftreasure-chronometer.png?v=1568348639925",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Sunny Cart minimal-ui",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/9bdcb1a9-d93f-4d1a-9d46-be446fbc251f%2Fblue-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "minimal-ui",
+
+
+  "share_target": {
+    "action": "/minimal-ui/share.html",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "text": "received_text",
+      "url": "received_url",
+      "files": [
+        {
+          "name": "records",
+          "accept": ["text/csv", ".csv"]
+        },
+        {
+          "name": "graphs",
+          "accept": "image/svg+xml"
+        }
+      ]
+    }
+  }
+}

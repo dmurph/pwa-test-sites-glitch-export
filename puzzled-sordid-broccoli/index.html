@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Scope Extensions OT-->
+    <meta
+      http-equiv="origin-trial"
+      content="AkUdouq7KgDEwiFPrkXnGuztfVZislG2Nz1mY9G8v13UgdrvK33QYuMTUizi/4Plf7rllllaLD81utQt/fMEzwoAAAB1eyJvcmlnaW4iOiJodHRwczovL3Njb3BlLWV4dGVuc2lvbnMtcGVybWlzc2lvbnMuZ2xpdGNoLm1lOjQ0MyIsImZlYXR1cmUiOiJXZWJBcHBTY29wZUV4dGVuc2lvbnMiLCJleHBpcnkiOjE3MTkzNTk5OTl9"
+    />
+    <!--Edge Scope Extensions OT-->
+    <meta
+      http-equiv="__origin-trial"
+      content="AvZnNH7XNcArsilqpdU85HZrisFuBvzHxrXsqoAfTt+sw0C+kBtABfcwSYZFh0G+1JK4fhCEEVFtbVRonteiZk0AAACJeyJvcmlnaW4iOiJodHRwczovL3Njb3BlLWV4dGVuc2lvbnMtcGVybWlzc2lvbnMuZ2xpdGNoLm1lOjQ0MyIsImlzU3ViZG9tYWluIjpmYWxzZSwiZmVhdHVyZSI6IldlYkFwcFNjb3BlRXh0ZW5zaW9ucyIsImV4cGlyeSI6MTcyMjI5NzYwMH0="
+    />
+    <!--Tabbed PWA OT-->
+    <meta
+      http-equiv="origin-trial"
+      content="AoZbX2x3a656HtTOkRYvkFUcKPg13oMdvmPsy604vFkAzybwjAZfdKbsylySjmZR1Z9k0VUhnDvgjf/4rMMHkwQAAABueyJvcmlnaW4iOiJodHRwczovL3Njb3BlLWV4dGVuc2lvbnMtcGVybWlzc2lvbnMuZ2xpdGNoLm1lOjQ0MyIsImZlYXR1cmUiOiJXZWJBcHBUYWJTdHJpcCIsImV4cGlyeSI6MTcxNjk0MDc5OX0="
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <script type="module">
+      import "https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate";
+      const el = document.createElement("pwa-update");
+      document.body.appendChild(el);
+    </script>
+  </head>
+  <body>
+    <h1>Test App For</h1>
+    <h2>
+      <a
+        href="https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md"
+        >Testing Web App scope extensions</a
+      >.
+    </h2>
+
+    <img
+      src="https://cdn.glitch.com/47e82a3e-e99d-4a0a-86f9-4f8bea8ede1e%2Fastronaut-icon.png?v=1587002651149"
+      alt="Astronaut."
+      height="200"
+      width="200"
+    />
+
+    <p>Test scope extensions by navigating to these links:</p>
+    <p>
+      <a href="https://luhuangmsft.github.io/permission1.site/"
+        >luhuangmsft.github.io/permission1.site</a
+      >
+    </p>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div
+      class="glitchButton"
+      style="position: fixed; top: 20px; right: 20px"
+    ></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>

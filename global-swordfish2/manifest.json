@@ -1,0 +1,15 @@
+{
+  "short_name": "Play Billing",
+  "name": "Play Billing Demo",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/0b18d658-f286-44b5-abc7-f6dddb405ee8%2FPlay%20Billing%20Demo%20Logo.png?v=1574389887805",
+      "sizes": "256X256"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#216F20",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#689f38"
+}

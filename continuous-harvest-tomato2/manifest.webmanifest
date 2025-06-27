@@ -1,0 +1,12 @@
+{
+  "name": "Continuous Harvest Tomato",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#552200",
+  "icons": [{
+    "src": "https://cdn.glitch.com/34f150fe-2292-42b9-acbb-764e564a7d5a%2Fcontinuous-harvest-tomato.svg?v=1610613073879",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }],
+  "capture_links": "new-client"
+}

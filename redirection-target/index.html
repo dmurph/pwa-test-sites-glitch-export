@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<script>
+  // HTTPS Redirect.
+  if (window.location.protocol != "https:") {
+    window.location.protocol = "https:";
+  }
+</script>
+
+<head id="headElement">
+  <title id="title">Placeholder App Tester - Redirection Target</title>
+  <link
+    rel="icon"
+    type="image/icon"
+    href="https://cdn.glitch.global/064e461c-e8d3-49e4-a6f4-8c12c074c49a/heart-upside-down.ico?v=1648765024038"
+  />
+</head>
+
+<style>
+  p,
+  div,
+  h1,
+  h2,
+  h3 {
+    font-family: Roboto, sans-serif;
+  }
+  #icon {
+    border-style: solid;
+    border-width: 10px;
+  }
+</style>
+
+<div>
+  <h1>REDIRECTION HAS OCCURRED</h1>
+</div>
+<div>
+  When placeholder install is enabled, then any page loads to
+  <code>/app/*</code> should redirect here. This will cause any app
+  force-installs to become placeholder apps.
+</div>
+<ul>
+  <li><a href="https://placeholder-app-tester.glitch.me/index.html">Back to main page</a></li>
+</ul>

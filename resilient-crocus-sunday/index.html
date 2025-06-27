@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<script>
+  // HTTPS Redirect.
+  if (window.location.protocol != "https:") {
+    window.location.protocol = "https:";
+  }
+</script>
+
+<head id="headElement">
+  <title id="title">Placeholder App Tester - Instructions</title>
+  <link
+    rel="icon"
+    type="image/icon"
+    href="https://cdn.glitch.global/064e461c-e8d3-49e4-a6f4-8c12c074c49a/favicon.ico?v=1648764912271"
+  />
+</head>
+
+<style>
+  p,
+  div,
+  h1,
+  h2,
+  h3 {
+    font-family: Roboto, sans-serif;
+  }
+  #icon {
+    border-style: solid;
+    border-width: 10px;
+  }
+</style>
+
+<div>
+  <h1>Placeholder App Tester - Instructions</h1>
+</div>
+
+<div>
+  <button onclick="startRedirection()">Start App Redirection</button>
+  <button onclick="stopRedirection()">Stop App Redirection</button>
+</div>
+
+<div>
+  <h2>
+    <a href="/app/index.html">Navigate to the app.</a>
+  </h2>
+</div>
+
+<div>
+  <h2>Setup</h2>
+  <ul>
+    <li>Have a managed user account.</li>
+    <li>Delete any existing chrome profile for this account.</li>
+    <li>
+      Ensure that the app url here is not in the force install list for this
+      user
+      <ol>
+        <li>Navigate to https://admin.google.com/ac/chrome/apps/</li>
+        <li>Click on "Users and Browsers"</li>
+        <li>
+          Click "Search or add filter" and add a filter for "Installation
+          Policy" = "Force install"
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/064e461c-e8d3-49e4-a6f4-8c12c074c49a/Screen%20Shot%202022-03-31%20at%203.42.52%20PM.png?v=1648766830759"
+            style="width: 400px"
+          />
+        </li>
+        <li>
+          Verify that https://placeholder-app-tester.glitch.me/app/index.html is
+          not in this list.
+          <ul>
+            <li>It would look like this:</li>
+            <li>
+              <img
+                src="https://cdn.glitch.global/064e461c-e8d3-49e4-a6f4-8c12c074c49a/Screen%20Shot%202022-03-31%20at%203.54.31%20PM.png?v=1648767588587"
+                style="width: 500px"
+              />
+            </li>
+          </ul>
+        </li>
+        <li>
+          If it is, <b>delete that entry</b> by clicking on it, and selecting
+          the trash can in the top right.
+        </li>
+      </ol>
+    </li>
+    <li>Create a new chrome profile and log in to this user</li>
+  </ul>
+</div>
+<div>
+  <h2>Test steps</h2>
+  <ol>
+    <li>Begin in the new chrome profile created above for the managed user.</li>
+    <li>
+      Navigate to this site with these instructions.
+      <ul>
+        <li>
+          (<a href="https://placeholder-app-tester.glitch.me/index.html"
+            >https://placeholder-app-tester.glitch.me/index.html</a
+          >)
+        </li>
+      </ul>
+    </li>
+    <li>Click on "Start App Redirection" button at the top of the page</li>
+    <li>
+      Verify that navigating to the app goes to the "REDIRECTION HAS OCCURRED"
+      page by clicking "Navigate to this app" above (or
+      <a href="https://placeholder-app-tester.glitch.me/app/index.html">here</a
+      >)
+      <ul>
+        <li>
+          If this does not work, try reloading this page, clicking on "Start App
+          Redirection" again, and trying to navigate to the app again.
+        </li>
+        <li>
+          Repeat this until navigating to the app always goes to the
+          "REDIRECTION HAS OCCURRED" page.
+        </li>
+      </ul>
+    </li>
+    <li>
+      Add the app url as a force install to the admin console of the user.
+      <ol>
+        <li>Navigate to the admin console for the user, at <a href="https://admin.google.com/ac/chrome/apps/">https://admin.google.com/ac/chrome/apps/</a>.</li>
+        <li>Click on "Users and Browsers"</li>
+        <ol>
+          <li>Click on the "+" icon in the bottom right</li>
+          <li>
+            Paste the URL and select "separate window" from the drop-down box
+            <ul>
+              <li><b>
+                <code
+                  >https://placeholder-app-tester.glitch.me/app/index.html</code
+                ></b>
+              </li>
+              <li>
+                <img
+                  src="https://cdn.glitch.global/064e461c-e8d3-49e4-a6f4-8c12c074c49a/Screen%20Shot%202022-03-31%20at%203.01.46%20PM.png?v=1648767702470"
+                  style="width: 400px"
+                />
+              </li>
+              <li>Click "Save"</li>
+            </ul>
+          </li>
+        </ol>
+      </ol>
+    </li>
+    <li>Wait and verify the "placeholder" of the app has been installed</li>
+    <li>
+      Add the app to the force install list for this user, if it doesn't already
+      exist there
+    </li>
+    <li>Create a new chrome profile and log in to this user</li>
+    <li>
+      Verify they do not have the
+      https://placeholder-app-tester.glitch.me/app/index.html app installed but
+      without the icon or name
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li>Log in to the managed Chrome profile</li>
+    <li>
+      Navigate to this site (<a
+        href="https://placeholder-app-tester.glitch.me/index.html"
+        >https://placeholder-app-tester.glitch.me/index.html</a
+      >)
+    </li>
+    <li>Click on "Start App Redirection"</li>
+    <li>
+      Verify that navigating to the app goes to the "redirection page" by
+      clicking on the link above.
+    </li>
+    <li>
+      Add the following url as a force install:
+      <code>https://placeholder-app-tester.glitch.me/app/index.html</code>
+      <ul></ul>
+    </li>
+    <li>Wait and verify the "placeholder" of the app has been installed.</li>
+  </ol>
+</div>
+
+<script src="main.js"></script>
+
+<!-- include the Glitch button to show what the webpage is about and
+      to make it easier for folks to view source and remix -->
+<div class="glitchButton" style="position: fixed; top: 20px; right: 20px"></div>
+<script src="https://button.glitch.me/button.js" defer></script>

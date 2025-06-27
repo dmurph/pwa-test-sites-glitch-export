@@ -1,0 +1,28 @@
+{
+  "name": "Private Brick Universe",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#2395d7",
+  "description": "Private universe in the galaxy. Used to test shortcuts",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.global/9c16b5f1-95d8-4ff4-853a-3d3f38028a86/squash_unvierse.png?v=1678721377249",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }],
+  "shortcuts": [
+    {
+      "name": "Brick Universe 1",
+      "short_name": "universe_1",
+      "description": "View the 1st universe",
+      "url": "/",
+      "icons": [{ "src": "https://cdn.glitch.global/9c16b5f1-95d8-4ff4-853a-3d3f38028a86/squash_unvierse.png?v=1678721377249", "sizes": "144x144" }]
+    },
+    {
+      "name": "Brick Universe 2",
+      "short_name": "universe_2",
+      "description": "View the 2nd universe",
+      "url": "/",
+      "icons": [{ "src": "https://cdn.glitch.global/9c16b5f1-95d8-4ff4-853a-3d3f38028a86/universe2.png?v=1678721605855", "sizes": "144x144" }]
+    }]
+}

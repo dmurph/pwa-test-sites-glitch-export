@@ -1,0 +1,12 @@
+{
+  "name": "Silk Curse Honey",
+  "description": "Silk Curse Honey",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ff9d00",
+  "icons": [{
+    "src": "https://cdn.glitch.global/7ea7db0a-76ba-46e9-9acd-5e3637e0cb5b/silk-curse-honey.svg?v=1667536618436",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }]
+}

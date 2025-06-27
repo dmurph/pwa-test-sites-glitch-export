@@ -1,0 +1,13 @@
+{
+  "name": "YLC Hard-Coded Note-Taking App",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#8FF",
+  "description": "App that is hard-coded in Chrome 91-93 as a note-taking app",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/2a5aee4a-a320-4773-9a21-ca1309ef85a3%2Fyielding-large-chef.png?v=1617698522842",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "pyrite-uttermost-caraway",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#1fe766",
+  "icons": [{
+    "src": "https://cdn.glitch.global/d7c95a1c-27c5-4410-a217-56e7bea38d71/skitter-chlorinated-ankylosaurus.svg?v=1673239815418",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }]
+}

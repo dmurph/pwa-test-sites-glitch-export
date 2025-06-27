@@ -1,0 +1,18 @@
+{
+  "name": "Noon Stream Music",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "icons": [{
+    "src": "https://cdn.glitch.global/cbe1fefc-05c0-4b21-80ff-5e8d75072254/noon-stream-music.svg?v=1688103321825",
+    "sizes": "144x144",
+    "type": "image/svg+xml",
+    "purpose": "maskable any"
+  }],
+  "scope_extensions": [{
+    "origin": "https://alancutter.github.io/"
+  }],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
+}

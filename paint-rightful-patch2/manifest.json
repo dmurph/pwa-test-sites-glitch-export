@@ -1,0 +1,49 @@
+{
+  "name": "Paint Rightful Patch",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/e13eefac-c035-4ca6-955e-3160e7b9a7e0%2Fpaint-rightful-patch.svg?v=1623391939838",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+      ],
+  "start_url": "/",
+  "theme_color": "black", 
+  "background_color": "pink",
+  "display": "standalone",
+  "display_override": ["tabbed"],
+  "description": "A test tabbed web app",
+  "shortcuts": [
+    {
+      "name": "Home",
+      "url": "/",
+      "icons": [
+        {
+          "src": "https://cdn.glitch.com/e13eefac-c035-4ca6-955e-3160e7b9a7e0%2Fpaint-rightful-patch.svg?v=1623391939838",
+          "sizes": "512x512",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Page1",
+      "url": "one.html"
+    },
+    {
+      "name": "Page2",
+      "url": "two.html"
+    }
+  ],
+  "tab_strip": {
+    "home_tab": {
+      "scope_patterns": [
+        {"pathname": "/:foo/*"},
+        {"pathname": "/index.html"},
+        {"pathname": "/"}
+      ]
+    },
+    "new_tab_button": {
+      "url": "one.html"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Maskable icons only : Glitch</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- This shouldn't be used when installing the app. -->
+    <link rel="icon" href="https://cdn.glitch.com/039a7dbf-c042-47e6-9d11-857318aa4b62%2Fbadicon.ico?v=1613356707242">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>This is a testing page with manifest with maskable icon only (no serviceworker)</h1>
+    <p>
+      It declares a favicon with "bad :(" that shouldn't be used for the installed app. The maskable icon from the manifest is preferable.
+    </p>
+    
+    <img src="https://cdn.glitch.com/039a7dbf-c042-47e6-9d11-857318aa4b62%2Fproud%20nautilus.png?v=1610067911249" />
+    
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>

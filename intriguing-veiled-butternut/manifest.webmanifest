@@ -1,0 +1,12 @@
+{
+  "name": "Intriguing Veiled Butternut",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#ba6734",
+  "icons": [{
+    "src": "https://cdn.glitch.global/0b1f9741-3f55-4324-a8ab-28bbd6353fb3/VeiledButternut144.jpeg?v=1707155078162",
+    "sizes": "144x144",
+    "type": "image/png"
+  }],
+  "capture_links": "existing-client-navigate"
+}

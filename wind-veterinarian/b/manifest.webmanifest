@@ -1,0 +1,12 @@
+{
+  "name": "Wind Veterinarian B",
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#beffff",
+  "scope": "/b/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/a3d85ab8-92de-40d8-b122-a2d6ac9f88d5%2Fwindvetb.png?1552284094394",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Third Concrete</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="https://cdn.glitch.com/591e8713-bc8f-4fee-b9f6-68a426c97474%2Fthird-concrete.png?v=1563431801919">
+</head>
+
+<style>
+* {
+  font-family: monospace;
+  font-size: 16px;
+}
+</style>
+
+<pre>
+Instructions:
+ - Click app letter to toggle its presence.
+   Note: System and Policy app sets don't permit device app removal.
+ - Press left/right to time travel.
+
+App circle legend:
+ - White: App not present.
+ - Coloured: App present.
+ - Grey: App is placeholder.
+ - Upper case: App is from user.
+ 
+Device update code: <a href="https://glitch.com/edit/#!/third-concrete?path=public/device.js:19:0">Device.updateApps()</a>
+</pre>
+
+<div id="render"></div>
+
+<pre id="output"></pre>
+
+<script type="module" src="main.js"></script>

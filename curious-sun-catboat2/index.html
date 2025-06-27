@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<script>
+// HTTPS Redirect.
+if (window.location.protocol != 'https:') {
+  window.location.protocol = 'https:';
+}
+</script>
+
+<head>
+  <title>Curious Sun Catboat</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" type="image/png" href="https://cdn.glitch.global/c1c1f1ca-867d-4c8a-9b3d-48792036a4d1/curious-sun-catboat-3.jpeg?v=1715227071970">
+</head>
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
+<img src="https://cdn.glitch.global/c1c1f1ca-867d-4c8a-9b3d-48792036a4d1/curious-sun-catboat-3.jpeg?v=1715227071970">
+<pre>Curious Sun Catboat</pre>
+<p>
+  Testing page for PWA with URL params in start_url and scope.
+</p>
+<script>
+navigator.serviceWorker.register('serviceworker.js');
+</script>

@@ -1,0 +1,23 @@
+{
+  "name": "Background Services Demo",
+  "short_name": "Background Demo",
+  "description": "Show background capabilities of web apps.",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.global/d99ab4ee-17a4-47eb-8b55-71316708442c/repeated-inexpensive-elephant.png?v=1695100358497",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/d99ab4ee-17a4-47eb-8b55-71316708442c/repeated-inexpensive-elephant.png?v=1695100358497",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "monochrome"
+    }
+  ],
+  "scope": "/",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#e8eaf6",
+  "theme_color": "#3f51b5"
+}

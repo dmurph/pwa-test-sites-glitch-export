@@ -1,0 +1,14 @@
+{
+  "name": "Cedar Encouraging Eagle",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#43271c",
+  "background_color": "#acc8a4",
+  "description": "Go cedars.",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/caf6c0e2-8ee2-42f5-b37a-236719bdfa75%2Fcedar-encouraging-eagle.svg?v=1594373432890",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }]
+}

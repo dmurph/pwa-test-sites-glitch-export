@@ -1,0 +1,10 @@
+{
+  "name": "App name",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/d2fcb66b-9bac-4be3-87f5-bb42b383d7c4%2Fexample.png?v=1592356485471",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

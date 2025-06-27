@@ -1,0 +1,12 @@
+{
+  "name": "Hulking Tangible Badger",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "theme_color": "#080",
+  "icons": [{
+    "src": "https://cdn.glitch.global/57363112-deba-49da-86b4-233bfd5688ed/hulking-tangible-badger.svg?v=1673225463195",
+    "sizes": "144x144",
+    "type": "image/svg+xml"
+  }]
+}

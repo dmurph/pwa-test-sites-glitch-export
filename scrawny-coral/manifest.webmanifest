@@ -1,0 +1,12 @@
+{
+  "name": "Scrawny Coral",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "red",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/74a0f7ed-5767-4aa9-8262-8ac5612d6fe6%2Fscrawnycoral.png?1552879828167",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

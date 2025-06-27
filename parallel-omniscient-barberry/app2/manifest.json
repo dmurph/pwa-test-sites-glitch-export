@@ -1,0 +1,31 @@
+{
+  "short_name": "II File Handling Demo (principled-ring-yarrow)",
+  "name": "II File Handling Demo (principled-ring-yarrow)",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/c7a93bed-1cdd-44bb-af17-bfcf7b4deebe%2Ffavicon-144x144.png?v=1565659787255",
+      "sizes": "144x144"
+    }
+  ],
+  "start_url": "/app2/appindex.html",
+  "background_color": "#8888FF",
+  "display": "standalone",
+  "scope": "/app2/",
+  "theme_color": "#9aca42",
+  "file_handlers": [
+    {
+      "action": "/app2/appindex.html?plaintext",
+      "name": "Plain Text",
+      "accept": {
+        "text/plain": [".txt", ".md", ".csv"]
+      }
+    },
+        {
+      "action": "/app2/appindex.html?richtext",
+      "name": "Rich Text",
+      "accept": {
+        "text/rtf": [".rtf"]
+      }
+    }
+  ]
+}

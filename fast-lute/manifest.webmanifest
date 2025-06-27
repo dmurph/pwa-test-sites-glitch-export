@@ -1,0 +1,12 @@
+{
+  "name": "Fast Lute",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#d6493b",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/9fb101c9-97ab-4b68-9c60-84a57c0fb414%2Fflicon.png?1533699603881",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

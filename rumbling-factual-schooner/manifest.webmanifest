@@ -1,0 +1,8 @@
+{
+  "name": "Correct app name",
+  "icons": [{
+    "src": "https://cdn.glitch.com/e9aa93a7-6ba7-442c-a8a3-f82392e65d48%2Ftick.png?v=1583127691531",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

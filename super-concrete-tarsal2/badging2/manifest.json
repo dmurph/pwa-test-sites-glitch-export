@@ -1,0 +1,12 @@
+{
+  "name": "Badging 2",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/9bdcb1a9-d93f-4d1a-9d46-be446fbc251f%2Fs4.png?v=1611282325696",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "minimal-ui"
+}

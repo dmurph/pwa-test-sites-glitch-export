@@ -1,0 +1,16 @@
+{
+  "short_name": "Noiseless Mum",
+  "name": "Noiseless Mum!",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/3ebb911a-8cde-4607-accf-51fd62823330%2Ficon-192.png?v=1575513574424",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/scope/scoped.html",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/scope/",
+  "theme_color": "#3367D6"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Delirious Twilight Scene",
+  "short_name": "Twilight",
+  "description": "Has a distinct name and short_name",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/72b80757-4b16-4e5e-ae98-308e57802fe4%2Fdelirious-twilight-scene-48.png?v=1621832046349",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://cdn.glitch.com/72b80757-4b16-4e5e-ae98-308e57802fe4%2Fdelirious-twilight-scene-192.png?v=1621832048773",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://cdn.glitch.com/72b80757-4b16-4e5e-ae98-308e57802fe4%2Fdelirious-twilight-scene-512.png?v=1621832051620",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Unexpected Five Scowl",
+  "start_url": ".",
+  "id": "https://unexpected-five-scowl.glitch.me/web/index.html?query=sdf#!/home.html",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.global/efed2cb6-5660-485d-b36e-d73adae50882/unexpected-five-scowl3.jpg?v=1713932036656",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

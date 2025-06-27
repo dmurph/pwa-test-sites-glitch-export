@@ -1,0 +1,12 @@
+{
+  "name": "Six Great Candytuft",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "icons": [{
+    "src": "https://cdn.glitch.global/da3f5347-6a62-4356-b766-f0ae42d8b133/six-great-candytuft.svg?v=1688104855870",
+    "sizes": "144x144",
+    "type": "image/svg+xml",
+    "purpose": "maskable any"
+  }]
+}

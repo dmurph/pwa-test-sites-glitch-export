@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<script>
+  // HTTPS Redirect.
+  if (window.location.protocol != "https:") {
+    window.location.protocol = "https:";
+  }
+</script>
+
+<head>
+  <title id="title">App Migration Tester</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<style>
+  p,
+  div,
+  h1,
+  h2,
+  h3 {
+    font-family: Roboto, sans-serif;
+  }
+</style>
+
+<h1>
+  App Migration Tester
+</h1>
+<p>
+  This website can be used to test the web app mover code. See
+  <a
+    href="https://chromiumdash.appspot.com/commit/04e626fdb460e5c2c8aeab216b10fb6026f04f63"
+    >this page</a
+  >
+  to see the Chrome versions that have this code.
+</p>
+
+<p>
+  This is just the root page, not a web app.
+</p>
+
+<div style="border: solid 1px grey; margin: 5px; padding: 5px;">
+  Directory:
+  <ul>
+    <li><a href="migrate_from/a/index.html">migrate_from/a/index.html</a></li>
+    <li><a href="migrate_from/b/index.html">migrate_from/b/index.html</a></li>
+    <li><a href="migrate_from/c/index.html">migrate_from/c/index.html</a></li>
+    <li><a href="migrate_to/index.html">migrate_to/index.html</a></li>
+    <li><a href="index.html">index.html (here)</a></li>
+  </ul>
+</div>
+
+<div>
+  <h1>
+    How to use this test site
+  </h1>
+  <div>
+    <h2>
+      Step 0: Have a clean slate.
+    </h2>
+    <p>
+      You should not have the destination app - the 'migrate_to' app - installed
+      (listed in the directory above). Check by going to chrome://apps to see if
+      it is there, or navigating to it above and looking in the 3-dot menu for
+      the Uninstall option.
+    </p>
+  </div>
+  <hr />
+  <div>
+    <h2>
+      Step 1: Install the 'migrate_from' apps.
+    </h2>
+    <p>
+      Navigate (using the directory below) to the 'migrate_from' apps, and
+      install them. App C is provided to help test the pattern migration method
+      below, and is not necessary for the prefix method.
+    </p>
+    <p>
+      This should result in:
+    </p>
+    <ul>
+      <li>
+        The apps being listed in chrome://apps (if you're not on ChromeOS)
+      </li>
+      <li>
+        The apps having their own platform shortcuts (which should be the same
+        name & icon - one will probably have a " (1)" after it).
+      </li>
+    </ul>
+  </div>
+  <hr />
+  <div>
+    <h2>
+      Step 2: Launch chrome with special command line flags to enable the
+      migration
+    </h2>
+    <p>
+      To cause the migration to occur, you must close chrome & relaunch it with
+      the following command line flags:
+    </p>
+    <h3>
+      Option 1: Prefix Migration (uninstall webapps using a prefix)
+    </h3>
+    <p>
+      <u> This option will uninstall all 'migrate_from' apps (by default).</u>
+    </p>
+    <pre>--enable-features=MoveWebApp:uninstallStartUrlPrefix/<span id="prefixUrl"></span>/installStartUrl/<span id="installUrl"></span></pre>
+
+    <p>
+      To test with another site, customize the URL prefix and install URL here:
+    </p>
+    <div>
+      <label for="urlPrefixInput">Uninstall URL Prefix</label>
+      <input type="text" id="urlPrefixInput" name="urlPrefixInput" size="100" />
+      <label for="installUrlInput">Install URL</label>
+      <input
+        type="text"
+        id="installUrlInput"
+        name="installUrlInput"
+        size="100"
+      />
+    </div>
+    <h3>
+      Option 2: Pattern Migration (uninstall webapps using a
+      <a href="https://github.com/google/re2/wiki/Syntax">regex</a> pattern)
+    </h3>
+    <p>
+      <u
+        >This option will uninstall only 'migrate_from/a' and 'migrate_from/b',
+        and not 'migrate_from/c' (by default).</u
+      >
+    </p>
+    <pre>--enable-features=MoveWebApp:uninstallStartUrlPattern/<span id="patternUrl"></span>/installStartUrl/<span id="patternInstallUrl"></span></pre>
+
+    <p>
+      To test with another site, customize the URL pattern and install URL
+      below. Note: The algorithm requires a <b>full</b> match.
+    </p>
+    <div>
+      <label for="urlPatternInput">Uninstall URL Pattern</label>
+      <input
+        type="text"
+        id="urlPatternInput"
+        name="urlPatternInput"
+        size="100"
+      />
+      <label for="patternInstallUrlInput">Install URL</label>
+      <input
+        type="text"
+        id="patternInstallUrlInput"
+        name="patternInstallUrlInput"
+        size="100"
+      />
+    </div>
+  </div>
+  <hr />
+  <div>
+    <h2>
+      Step 3: Verify that the migration took place!
+    </h2>
+    <p>
+      After launch, the migration should happen automatically.
+    </p>
+    <ul>
+      <li>
+        If you used option 1 above, then all of the 'migrate_from' apps that you
+        installed should be uninstalled, and the 'migrate_to' app should be
+        installed.
+      </li>
+      <li>
+        If you used option 2 above, then two of the 'migrate_from' apps (A and
+        B) that you installed should be uninstalled, and the 'migrate_to' app
+        and the 'C' app should be installed.
+      </li>
+    </ul>
+    <p>
+      Things to watch out for / test:
+    </p>
+    <ul>
+      <li>
+        Can you witness the migration? Is it possible to quickly launch the old
+        apps before migration?
+      </li>
+      <li>
+        What happened to the platform shortcuts? There should only be one, and
+        it should match the original.
+      </li>
+      <li>
+        On Mac, if the old platform shortcut was on the dock, does it work &
+        launch the new site?
+      </li>
+    </ul>
+    Note: App C is a different title & icon on purpose, so uninstalling this
+    (using option one - prefix uninstall) will break any shortcuts to that app.
+  </div>
+  <div>
+    <h2>
+      Step 3 Version 2: Test that platform shortcuts work
+    </h2>
+    <p>
+      This is testing the use case where the user "launches Chrome by launching
+      the platform shortcut for one of the migrate_from/ apps". Migration should
+      happen, and it should close the webapp.
+    </p>
+    <p>
+      On Windows and Linux, we can test the shortcut launching behavior by
+      launching Chrome from the command line. On Mac, we launch the App Shim
+      application from the command line.
+    </p>
+    <h3>
+      How to create the command line arguments to launch an app - Windows
+    </h3>
+    <p>
+      Everyone's systems are different. Suggested approach:
+    </p>
+    <ul>
+      <li>Find the platform shortcut for a migrate_from/ app</li>
+      <li>Right click -&gt; Properties</li>
+      <li>
+        Look at what the 'Target' area says. This is the command line string
+        that can be used to execute this shortcut.
+      </li>
+      <li>Copy that whole string, including the "app-id" part.</li>
+      <li>
+        Open a windows command line prompt, and paste that string in & press
+        enter
+      </li>
+      <li>Verify that this launches the web app window</li>
+      <li>
+        Append the above command line flags to that string - this is what will
+        both launch the app AND trigger migration.
+      </li>
+    </ul>
+    Should look something like this for option 1 (prefix):
+    <pre>
+"C:\Users\...user...\AppData\Local\Google\Chrome (Canary?Beta?)\Application\chrome_proxy.exe" --profile-directory=Default --app-id=bobligadgjompiignclmopbdhddoojeg --enable-features=MoveWebApp:uninstallStartUrlPrefix/https%3a%2f%2fapp-migration-tester%2eglitch%2eme%2fmigrate_from%2f/installStartUrl/https%3a%2f%2fapp-migration-tester%2eglitch%2eme%2fmigrate_to%2findex%2ehtml</pre
+    >
+    And something like this for option 2 (pattern):
+    <pre>
+"C:\Users\...user...\AppData\Local\Google\Chrome (Canary?Beta?)\Application\chrome_proxy.exe" --profile-directory=Default --app-id=bobligadgjompiignclmopbdhddoojeg --enable-features=MoveWebApp:uninstallStartUrlPattern/https%3a%2f%2fapp-migration-tester\%2eglitch\%2eme%2fmigrate_from%2f[a%2cb]%2f/installStartUrl/https%3a%2f%2fapp-migration-tester%2eglitch%2eme%2fmigrate_to%2findex%2ehtml</pre
+    >
+    <h3>
+      How to create the command line arguments to launch an app - Linux
+    </h3>
+    <p>
+      Similar to above, take the command line normally used to execute chrome,
+      and append the app-id part and the flags.
+    </p>
+    <h3>
+      How to create the command line arguments to launch an app - Mac
+    </h3>
+    <ol>
+      <li>
+        Open the "Terminal" App (Applications -&gt; Utilities -&gt; Terminal).
+      </li>
+      <li>
+        Find the app you want to launch (User -&gt; Applications -&gt; Chrome
+        Apps (possibly Canary, etc) -&gt; App Name)
+      </li>
+      <li>
+        Drag the app to the Terminal window. It should show up as a file path in
+        the terminal.
+      </li>
+      <li>
+        Add the following line after <code>.app</code>
+        <ol>
+          <li>
+            <code>/Contents/MacOS/app_mode_loader </code>
+          </li>
+          <li>
+            Add a space, and paste the flags outlined above (either prefix
+            version or pattern version)
+          </li>
+        </ol>
+      </li>
+    </ol>
+    <p>
+      That's it! It should work if you press enter. It should look something
+      like this:
+    </p>
+    <pre>
+/Users/dmurph/Applications/Chrome\ Canary\ Apps.localized/App\ Migration\ Tester.app/Contents/MacOS/app_mode_loader --enable-features=MoveWebApp:uninstallStartUrlPattern/https%3a%2f%2fapp-migration-tester\\%2eglitch\\%2eme%2fmigrate_from%2f[ab]%2f%2e*/installStartUrl/https%3a%2f%2fapp-migration-tester%2eglitch%2eme%2fmigrate_to%2findex%2ehtml</pre
+    >
+    <h3>
+      Expected Results
+    </h3>
+    <p>
+      The app should launch and show a migrate_from/ app, and then a few seconds
+      later it should close. Chrome will still run for a little bit, then it
+      will exit. Launching Chrome again should show that the migration worked.
+    </p>
+  </div>
+</div>
+
+<script>
+  function createFeatureParam(str) {
+    return str.replace(/[.%\/,:]/g, function(c) {
+      return "%" + c.charCodeAt(0).toString(16);
+    });
+  }
+  function updateCommandLines(prefix, installUrl, pattern, patternInstallUrl) {
+    document.getElementById("prefixUrl").innerHTML = createFeatureParam(prefix);
+    document.getElementById("installUrl").innerHTML = createFeatureParam(
+      installUrl
+    );
+    document.getElementById("patternUrl").innerHTML = createFeatureParam(
+      pattern
+    );
+    document.getElementById("patternInstallUrl").innerHTML = createFeatureParam(
+      patternInstallUrl
+    );
+  }
+  function updateCommandLineFromForm() {
+    updateCommandLines(
+      urlPrefixInput.value,
+      installUrlInput.value,
+      patternInput.value,
+      patternInstallUrlInput.value
+    );
+  }
+  var urlPrefixInput = document.getElementById("urlPrefixInput");
+  var installUrlInput = document.getElementById("installUrlInput");
+  var patternInput = document.getElementById("urlPatternInput");
+  var patternInstallUrlInput = document.getElementById(
+    "patternInstallUrlInput"
+  );
+
+  urlPrefixInput.addEventListener("change", updateCommandLineFromForm);
+  installUrlInput.addEventListener("change", updateCommandLineFromForm);
+  patternInput.addEventListener("change", updateCommandLineFromForm);
+  patternInstallUrlInput.addEventListener("change", updateCommandLineFromForm);
+
+  var href_without_file = window.location.href;
+  href_without_file =
+    href_without_file.substring(0, href_without_file.lastIndexOf("/")) + "/";
+  var prefixUrl = href_without_file + "migrate_from/";
+  var installUrl = href_without_file + "migrate_to/index.html";
+  var patternUrl =
+    href_without_file.replaceAll("\.", "\\\\.") + "migrate_from/[ab]/.*";
+  var patternInstallUrl = href_without_file + "migrate_to/index.html";
+
+  urlPrefixInput.value = prefixUrl;
+  installUrlInput.value = installUrl;
+  patternInput.value = patternUrl;
+  patternInstallUrlInput.value = patternInstallUrl;
+
+  updateCommandLineFromForm();
+</script>

@@ -1,0 +1,20 @@
+{
+  "name": "Relative Start URL",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#789ABC",
+  "description": "Testing site for relative start URLs in web manifests",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/c0dda276-8ea1-47be-b9a5-1a9127dc7eac%2Femphasised-shell-feeling.png?v=1623990710676",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/c0dda276-8ea1-47be-b9a5-1a9127dc7eac%2Femphasised-shell-feeling%20(1).png?v=1623991691742",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}

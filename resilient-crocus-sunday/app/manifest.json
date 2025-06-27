@@ -1,0 +1,13 @@
+{
+  "name": "Placeholder App Tester",
+  "description": "App intending to be redirected.",
+  "start_url": "/app/index.html",
+  "display": "standalone",
+  "theme_color": "#ec9740",
+  "scope": "/app/",
+  "icons": [{
+    "src": "https://cdn.glitch.global/064e461c-e8d3-49e4-a6f4-8c12c074c49a/heart.png?v=1648764829473",
+    "sizes": "1146×1146",
+    "type": "image/png"
+  }]
+}

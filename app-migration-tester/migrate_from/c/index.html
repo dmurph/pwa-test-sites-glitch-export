@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<script>
+  // HTTPS Redirect.
+  if (window.location.protocol != "https:") {
+    window.location.protocol = "https:";
+  }
+</script>
+
+<head>
+  <title id="title">Migration has happened!</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta id="themeColor" name="theme-color" content="#99ff99" />
+  <link
+    rel="icon"
+    type="image/png"
+    href="https://cdn.glitch.com/d80a84de-1565-4730-9b15-17d17c7cd9e8%2F123f3355-7b68-4d57-839b-9171ebd9f877_spup.png?v=1611348083145"
+  />
+</head>
+
+<style>
+  * {
+    font-family: monospace;
+    background-color: #99ff99;
+  }
+</style>
+
+<h1>
+  App to MAYBE migrate from! App C.
+</h1>
+
+<div>
+  This is app we are trying to MAYBE migrate from (depending on your configuration).
+</div>
+
+
+<div style="border: solid 1px grey; margin: 5px; padding: 5px;">
+  Directory:
+  <ul>
+    <li><a href="../a/index.html">migrate_from/a/index.html</a></li>
+    <li><a href="../b/index.html">migrate_from/b/index.html</a></li>
+    <li><a href="index.html">migrate_from/c/index.html (here)</a></li>
+    <li><a href="../../migrate_to/index.html">migrate_to/index.html</a></li>
+    <li><a href="../../index.html">index.html</a></li>
+  </ul>
+</div>
+
+<script>
+navigator.serviceWorker.register('serviceworker.js')
+</script>

@@ -1,0 +1,12 @@
+{
+  "name": "Ruby Clover",
+  "start_url": "https://ruby-clover.glitch.me/",
+  "display": "standalone",
+  "theme_color": "#1abf98",
+  "scope": "https://ruby-clover.glitch.me/",
+  "icons": [{
+    "src": "https://cdn.glitch.com/1afe0eda-bd0e-4565-8e5b-e5d566b50f39%2Fruby-clover.png?1544774818821",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}

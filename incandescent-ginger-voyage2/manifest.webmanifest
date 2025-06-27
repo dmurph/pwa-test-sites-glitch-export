@@ -1,0 +1,13 @@
+{
+  "name": "Incandescent Ginger Voyage",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "id": "https://incandescent-ginger-voyage.glitch.me/",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.global/a24be1d4-8b16-444b-a044-18e89dc4158e/incandescent-ginger-voyage.png?v=1678240134641",
+    "sizes": "256x256",
+    "type": "image/png"
+  }]
+}

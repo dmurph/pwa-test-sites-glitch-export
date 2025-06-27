@@ -1,0 +1,42 @@
+{
+  "name": "Slick Blackbirb",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#a0532e",
+  "description": "Sick Blackbirb rocking some unique denims",
+  "scope": "/",
+  "icons": [{
+    "src": "https://cdn.glitch.global/e0cd912c-fc73-4918-9f93-899e2799853a/BlackbirdJeans_144.svg?v=1704898515405",
+    "sizes": "any",
+    "type": "image/svg+xml"
+  }],
+  "shortcuts": [
+    {
+      "name": "Smol Birb",
+      "url": "/",
+      "icons": [
+        {
+          "src": "https://cdn.glitch.global/e0cd912c-fc73-4918-9f93-899e2799853a/BlackbirdJeans_144.jpeg?v=1704898515405",
+          "sizes": "0x0",
+          "type": "image/svg+xml",
+          "purpose": "any monochrome"
+        }
+      ]
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/?plaintext",
+      "name": "Plain Text",
+      "icons": [
+        {
+          "src": "https://cdn.glitch.global/e0cd912c-fc73-4918-9f93-899e2799853a/BlackbirdJeans_144.svg?v=1704898515405",
+          "sizes": "any"
+        }
+      ],
+      "accept": {
+        "image/txt": [".txt", ".md", ".csv"]
+      }
+    }
+  ]
+}
